@@ -1,0 +1,11 @@
+{
+    "name": "{{ project_name }}",
+    "description": "",
+    "author": "",
+    "devDependencies": {
+        "grunt-cli": "~0.1.8",
+        "grunt": "~0.4.1",
+        "grunt-contrib-watch": "~0.4.3",
+        "grunt-contrib-sass": "~0.3.0"
+    }
+}
