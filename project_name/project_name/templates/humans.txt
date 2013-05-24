@@ -1,0 +1,16 @@
+/* TEAM */
+	Your title: Your name.
+	Site: email, link to a contact form, etc.
+	Twitter: your Twitter username.
+
+/* THANKS */
+	Project template: Mike Dingjan
+	Contact: mike [at] mikedingjan.com
+	Twitter: @mikedingjan
+
+/* SITE */
+	Last update: YYYY/MM/DD
+	Language:
+	Components:
+	Doctype: HTML5
+	Software: Sublime Text, PyCharm
