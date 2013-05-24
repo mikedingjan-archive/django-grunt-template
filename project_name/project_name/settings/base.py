@@ -1,5 +1,7 @@
 import os
 
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as DEFAULT_TEMPLATE_CONTEXT_PROCESSORS
+
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
@@ -63,6 +65,10 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+TEMPLATE_cONTEXT_PROCESSORS = DEFAULT_TEMPLATE_CONTEXT_PROCESSORS + (
+    'django.core.context_processors.request',
+)
+
 ROOT_URLCONF = '{{ project_name }}.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
@@ -73,6 +79,11 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'admin_tools',
+    'admin_tools.theming',
+    'admin_tools.menu',
+    'admin_tools.dashboard',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
