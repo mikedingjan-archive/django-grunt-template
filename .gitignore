@@ -1,9 +1,9 @@
 *.db
 *.pyc
 
-project_name/node_modules
-project_name/project_name/settings/local.py
-project_name/project_name/static/dist/*
+{{ project_name }}/node_modules
+{{ project_name }}/{{ project_name }}/settings/local.py
+{{ project_name }}/{{ project_name }}/static/dist/*
 
-project_name/public/static/*
-project_name/public/media/*
+{{ project_name }}/public/static/*
+{{ project_name }}/public/media/*
