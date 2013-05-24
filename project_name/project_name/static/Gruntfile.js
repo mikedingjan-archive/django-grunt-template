@@ -1,6 +1,5 @@
-'use strict';
-
 module.exports = function( grunt ) {
+    'use strict';
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -47,19 +46,12 @@ module.exports = function( grunt ) {
             }
         },
 
-        clean: {
-            dist: {
-                files: [
-                    // remove source dirs
-                    '{{ project_name }}/static/sass/',
-                    '{{ project_name }}/static/src',
-
-                    // remove compile files
-                    '{{ project_name }}/static/dist/main.css',
-                    '<%= concat.dist.dest %>'
-                ]
-            }
-        },
+        clean: [
+            '{{ project_name }}/static/sass/',
+            '{{ project_name }}/static/src',
+            '{{ project_name }}/static/dist/main.css',
+            '<%= concat.dist.dest %>'
+        ],
 
         watch: {
             files: [
@@ -78,6 +70,7 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
     grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 
-    grunt.registerTask( 'default', ['sass', 'cssmin', 'concat', 'uglify', 'clean'] );
+    grunt.registerTask( 'default', ['sass', 'cssmin', 'concat', 'uglify'] );
+    grunt.registerTask( 'production', ['sass', 'cssmin', 'concat', 'uglify', 'clean'] );
 
 };
