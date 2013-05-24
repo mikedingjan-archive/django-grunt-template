@@ -3,7 +3,7 @@
 
 project_name/node_modules
 project_name/project_name/settings/local.py
-project_name/project_name/static/*
+project_name/project_name/static/dist/*
 
 project_name/public/static/*
 project_name/public/media/*
