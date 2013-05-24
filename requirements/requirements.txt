@@ -1,0 +1,7 @@
+Django==1.5.1
+South==0.8.1
+django-admin-tools==0.5.1
+psycopg2==2.5
+
+readline==6.2.4.1
+ipython==0.13.2
